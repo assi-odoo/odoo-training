@@ -1,0 +1,276 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+</head>
+
+<style>
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.main{
+     border-style: solid;
+    border-width: 2px;
+    margin: 20%;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.head{
+    display: flex;
+}
+
+.sec1{
+    margin-left: 20%;
+}
+.image{
+    width: 40%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.7px;
+}
+
+.sec2{
+    margin-left: 40%;
+}
+
+.description{
+    margin: 7%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+}
+
+.form{
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+    margin: 5%;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputs{
+    margin-top: 1%;
+    width: 50%;
+    height: 40px;
+}
+
+.submit{
+    background-color: green;
+    margin-right: 3%;
+    border-width: 0px;
+    height: 30px;
+}
+
+.buttons{
+    margin-top: 2%;
+}
+
+.cancel{
+    height: 30px;
+}
+
+.l2{
+    margin-top: 1%;
+
+}
+
+.skills{
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill1{
+    overflow: hidden;
+
+    padding: 2%;
+    width: 25%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5%;
+    transition: transform .2s;
+}
+
+.skill1:hover{
+    transform: scale(1.1);
+}
+
+.set_img{
+    max-height: auto;
+    width: 20%;
+}
+.projects{
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+
+
+#follow{
+    text-align: center;
+}
+
+a:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+}
+.font{
+    font-size: 1.4em;
+}
+
+.more_skills{
+    margin-bottom: 5%;
+}
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="head">
+
+            <section class="sec1">
+                <h2>Astik singh</h2>
+                <p>astiksingh24@gmail.com</p>
+                <p>6352201170</p>
+                <p>----------</p>
+                <p>----------</p>
+            </section>
+
+            <section class="sec2">
+                <img src="pic.jpg" class="image">
+            </section>
+            
+        </div>
+
+
+
+        <div class="description">
+
+                <h2>Small Description</h2>
+
+
+                <p>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do.</p>
+                
+            </div>
+
+
+
+            <div class="form">
+                <h1>FORM :</h1>
+                <div class="fields">
+                    <label for="subdomain">Field1 </label>
+                    <input type="text" placeholder="" class="inputs" />
+
+                    <label for="subdomain" class="l2">Field2 </label>
+                    <input type="text" placeholder="" class="inputs"/>
+
+                    <label for="subdomain" class="l2">Field3 </label>
+                    <input type="text" placeholder="" class="inputs"/>
+                </div>
+
+                <p>Language :</p>
+                <label>English</label>
+                <input type="checkbox" name="English">
+
+                <label>Hindi</label>
+                <input type="checkbox" name="Hindi"> <br>
+
+                <div class="buttons">
+                     <input type="submit" name="" class="submit">
+                    <button class="cancel">Cancel</button>
+                </div>
+
+               
+
+            </div>
+
+            <h1 class="projects">PROJECTS </h1>
+
+            <div class="skills">
+
+                <section class="skill1">
+                    <img src="js.png" class="set_img">
+                    <h2>Javascript</h2>
+                    <p>Live projects : </p>
+                    <p>The calculator is one of the easy JavaScript projects on our list. We will use simple HTML and CSS</p>
+                </section>
+
+                <section class="skill1">
+                    <img src="react.jpg" class="set_img">
+                    <h2>React</h2>
+                    <p>Live projects : </p>
+                    <p>The React Social Network is an open-source project relying on React</p>
+                </section>
+
+                <section class="skill1">
+                    <img src="node.png" class="set_img">
+                    <h2>Node</h2>
+                    <p>Live projects : </p>
+                    <p>A node can be a couple of different things depending on whether the conversation is about computer science or networking.</p>
+                </section>
+            </div>
+
+            <div> 
+                <h2 id="follow">Follow Me on Below Links</h2>
+                
+
+                <div class="links">
+                    <a href="#"> Linkedin</a>
+                    <a href="#"> Github</a>
+                    <a href="#"> Twitter</a>
+
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div class="more_skills">
+
+                <h2 style="text-align: center;">Skills</h2>
+
+                <div style="display: flex; justify-content: space-around;">
+
+                    <label for="disk_c" class="font">C language</label>
+                <meter id="disk_c" value="7" min="0" max="10" class="font">70%</meter><br>
+
+                <label for="disk_d" class="font" >Responsive Design</label>
+                <meter id="disk_d" value="0.6" class="font">60%</meter>
+
+                <label for="disk_d" class="font">Ethical Hacking</label>
+                <meter id="disk_d" value="0.6" class="font">60%</meter>
+
+                </div>
+
+                
+                
+            </div>
+
+        
+    </div>
+
+</body>
+</html> 
